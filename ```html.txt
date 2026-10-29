@@ -1,0 +1,130 @@
+```html
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>ReviewX | Product Reviews</title>
+
+<style>
+/* GENERAL */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background: #0b1020;
+    color: white;
+    overflow-x: hidden;
+}
+
+/* BACKGROUND EFFECT */
+body::before {
+    content: "";
+    position: fixed;
+    width: 450px;
+    height: 450px;
+    background: #5b4892;
+    filter: blur(180px);
+    opacity: 0.2;
+    top: 100px;
+    left: -150px;
+    z-index: -1;
+}
+
+/* NAVBAR */
+nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 22px 8%;
+    background: rgba(11, 16, 32, 0.9);
+    position: sticky;
+    top: 0;
+    z-index: 100;
+    backdrop-filter: blur(15px);
+    border-bottom: 1px solid #242b43;
+}
+
+.logo {
+    font-size: 27px;
+    font-weight: bold;
+    color: #9b87ff;
+}
+
+nav a {
+    color: #ddd;
+    text-decoration: none;
+    margin-left: 25px;
+    transition: 0.3s;
+}
+
+nav a:hover {
+    color: #a99aff;
+}
+
+/* HERO */
+.hero {
+    text-align: center;
+    padding: 90px 20px 65px;
+    animation: fadeUp 1s ease;
+}
+
+.hero h1 {
+    font-size: clamp(36px, 6vw, 65px);
+    line-height: 1.15;
+    margin-bottom: 20px;
+}
+
+.hero h1 span {
+    color: #a18aff;
+}
+
+.hero p {
+    color: #aeb6cc;
+    font-size: 17px;
+    margin-bottom: 30px;
+    line-height: 1.7;
+}
+
+.search-box {
+    display: flex;
+    max-width: 520px;
+    margin: auto;
+    background: #171e33;
+    border: 1px solid #343d59;
+    border-radius: 12px;
+    overflow: hidden;
+}
+
+.search-box input {
+    flex: 1;
+    padding: 16px;
+    background: transparent;
+    border: none;
+    outline: none;
+    color: white;
+    font-size: 15px;
+    min-width: 0;
+}
+
+.search-box button {
+    background: #8065f2;
+    color: white;
+    border: none;
+    padding: 0 24px;
+    cursor: pointer;
+    font-weight: bold;
+    transition: 0.3s;
+}
+
+.search-box
+```
